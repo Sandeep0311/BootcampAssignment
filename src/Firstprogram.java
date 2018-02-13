@@ -1,4 +1,4 @@
-public class firstprogram {
+public class Firstprogram {
     String s1="sandeep";
     private void replace(){
         System.out.println("old string: "+s1);
@@ -8,6 +8,6 @@ public class firstprogram {
 
     public static void main(String[] args) {
 
-        new firstprogram().replace();
+        new Firstprogram().replace();
     }
 }
