@@ -1,30 +1,30 @@
+
+
 public class Secondprogram {
-    String s= " sandeep said sandeep is my name ...only name";
+    String s= " sandeep said sandeep is my name name only name";
+    int  i,j;
+    int count=1;
+    int flag=0;
     private void occurance(){
-        int count=0;
-        int  i,j;
+
         String []words=s.split(" ");
-        for(String w: words){
-            //System.out.println(w);
-        }
         for(i=0; i<words.length;i++){
-            for(j=1; j<words.length;j++){
-                if(words[j]==words[i]){
+            count=1;
+            for(j=i+1; j<words.length;j++){
+                if(words[i].equals(words[j])){
                     count++;
+                    flag=1;
+
+                    //System.out.println(words[i]);
+                    if(flag ==1){
+                        System.out.println(words[j]+" "+count);
+                    }
                 }
-                System.out.println(words[j] +" "+ count);
             }
-
-            count=0;
-
         }
-
-
     }
     public static void main(String[] args) {
-    Secondprogram s=new Secondprogram();
-        s.occurance();
-
-
+    Secondprogram sp=new Secondprogram();
+        sp.occurance();
     }
 }
