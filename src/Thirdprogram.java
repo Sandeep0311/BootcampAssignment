@@ -6,13 +6,14 @@ public class Thirdprogram {
         System.out.println("Enter String: ");
         String s=sc.next();
         System.out.println("Enter char to find: ");
-        char c=sc.next().charAt(0);
-        String c1=System.console().readLine();//read from console*******
-        System.out.println(c1);
+        String c=sc.next();
+       // String c1=System.console().readLine();//read from console*******
+       // System.out.println(c1);
         int l=s.length();
-        int la=s.replace("a","").length();
-        System.out.println(l);
-        System.out.println("char a : "+ (l-la));
+        int la=s.replace(c,"").length();
+        //System.out.println("total length: "+l);
+        //System.out.println("char without "+la);
+        System.out.println((l-la)+" times");
         occurance();
     }
     public static void main(String[] args) {
