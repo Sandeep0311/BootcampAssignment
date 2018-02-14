@@ -1,3 +1,7 @@
+//Calculate the number & Percentage Of Lowercase Letters,Uppercase Letters, Digits
+// And Other Special Characters In A String
+
+
 import java.text.DecimalFormat;
 
 public class Fourthprogram {
@@ -40,9 +44,6 @@ public class Fourthprogram {
         System.out.println("LowerCase letters are: "+df.format(lcp)+"%");
         System.out.println("digits are: "+df.format(dgp)+"%");
         System.out.println("other special characters are: "+df.format(othersp)+"%");
-
-
-
 
     }
     public static void main(String[] args) {
